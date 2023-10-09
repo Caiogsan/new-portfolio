@@ -1,5 +1,5 @@
 import caio from "../../assets/personal.PNG"
-import { AiOutlineGithub, AiOutlineInstagram, AiOutlineMail } from "react-icons/ai";
+import { AiOutlineGithub, AiOutlineInstagram, AiOutlineMail, AiFillLinkedin } from "react-icons/ai";
 import { SiCodewars } from "react-icons/si";
 
 
@@ -17,10 +17,11 @@ function Presentation({texto1, texto2, stylesGeneral, stylesImg, stylesTxt, styl
                 </div>
             </div>
             <ul className={`flex gap-4 ${stylesContact} text-3xl text-gray-500`}>
-                <li className="hover:cursor-pointer hover:text-black duration-300"><AiOutlineGithub></AiOutlineGithub></li>
-                <li className="hover:cursor-pointer hover:text-black duration-300"><AiOutlineInstagram></AiOutlineInstagram></li>
-                <li className="hover:cursor-pointer hover:text-black duration-300"><AiOutlineMail></AiOutlineMail></li>
-                <li className="hover:cursor-pointer hover:text-black duration-300"><SiCodewars></SiCodewars></li>
+                <li className="hover:cursor-pointer hover:text-black duration-300"><a target="__blank" href="https://github.com/Caiogsan"><AiOutlineGithub></AiOutlineGithub></a></li>
+                <li className="hover:cursor-pointer hover:text-black duration-300"><a target="__blank" href=""><AiOutlineInstagram></AiOutlineInstagram></a></li>
+                <li className="hover:cursor-pointer hover:text-black duration-300"><a target="__blank" href="mailto:caiogsan@hotmail.com"><AiOutlineMail></AiOutlineMail></a></li>
+                <li className="hover:cursor-pointer hover:text-black duration-300"><a target="__blank" href="https://www.linkedin.com/in/caio-santos1206/"><AiFillLinkedin></AiFillLinkedin></a></li>
+                <li className="hover:cursor-pointer hover:text-black duration-300"><a target="__blank" href="https://www.codewars.com/users/Caiogsan"><SiCodewars></SiCodewars></a></li>
             </ul>
         </div>
         
