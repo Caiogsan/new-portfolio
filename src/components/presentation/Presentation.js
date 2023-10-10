@@ -6,7 +6,7 @@ import { SiCodewars } from "react-icons/si";
 function Presentation({texto1, texto2, stylesGeneral, stylesImg, stylesTxt, stylesTxt2, stylesContact}){
     return (
         <div>
-            <div className={`flex ${stylesGeneral} h-[25rem] gap-4 font-navbar pb-4`}>
+            <div className={`flex ${stylesGeneral} h-[25rem] gap-4 font-navbar mb-6`}>
                 <div className={`w-[60%] flex flex-col justify-between ${stylesTxt}`}>
                     <h1 className="text-[40px] text-5xl leading-tight font-bold ">{texto1}</h1>
                     <p className={`text-md flex leading-7`}>{texto2}</p>

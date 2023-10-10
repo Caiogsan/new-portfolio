@@ -10,7 +10,7 @@ import { LanguageContext } from "../header/LanguageContext"
 function Projects(){
     const {language, setLanguage} = useContext(LanguageContext)
     return (
-        <div className="flex flex-col pb-32 pt-28 pt- font-navbar">
+        <div className="flex flex-col pb-32 pt-28 font-navbar">
             <h1 className="text-2xl pb-12 font-bold">{language === "ingles" ? "Ultimate Gym Project" : "Projeto Academia Ultimate"}</h1>
             <div className="pb-12">
                 <a target="__blank" href="https://caiogsan.github.io/proj-acad/"><img alt="academia" className="rounded-2xl hover:scale-110 duration-300" src={acadSite}></img></a>

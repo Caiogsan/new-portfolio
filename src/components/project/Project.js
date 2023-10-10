@@ -4,11 +4,11 @@ import { acadSite, ProjectImg, Presentation, cordel, android, popflix, portfolio
 function Project(){
     return (
         <div className="w-[90%] bg-white font-navbar m-auto">
-            <div className="pt-32">
+            <div className="pt-40">
                 <Presentation texto1={"Things I’ve made trying to put my dent in the universe."}
                 stylesContact={'hidden'}
-                stylesGeneral={'w-[80%] m-auto'}
-                stylesTxt={'w-[80%]'}
+                stylesGeneral={'w-[80%]  m-auto'}
+                stylesTxt={'w-[80%] justify-around'}
                 stylesImg={'hidden'}
                 texto2={"I've worked on a variety of projects over the years and I'm proud of the progress I've made. Many of these projects are open-source and available for others to explore and contribute to. If you're interested in any of the projects I've worked on, please feel free to check out the code and suggest any improvements or enhancements you might have in mind. Collaborating with others is a great way to learn and grow, and I'm always open to new ideas and feedback."}
                 ></Presentation>
