@@ -6,14 +6,14 @@ import { SiCodewars } from "react-icons/si";
 function Presentation({texto1, texto2, stylesGeneral, stylesImg, stylesTxt, stylesTxt2, stylesContact}){
     return (
         <div>
-            <div className={`flex ${stylesGeneral} font-navbar pb-4`}>
-                <div className={`w-[60%] flex flex-col justify-between ${stylesTxt} pr-12`}>
-                    <h1 className="text-[40px] pb-6 font-bold ">{texto1}</h1>
-                    <p className={`text-sm flex leading-7`}>{texto2}</p>
+            <div className={`flex ${stylesGeneral} h-[25rem] gap-4 font-navbar pb-4`}>
+                <div className={`w-[60%] flex flex-col justify-between ${stylesTxt}`}>
+                    <h1 className="text-[40px] text-5xl leading-tight font-bold ">{texto1}</h1>
+                    <p className={`text-md flex leading-7`}>{texto2}</p>
                     
                 </div>  
                 <div className={`w-[40%] ${stylesImg} flex justify-center`}>
-                    <img className="rounded-[30px]  rotate-3" src={caio}></img>
+                    <img className="rounded-[30px] rotate-3" src={caio}></img>
                 </div>
             </div>
             <ul className={`flex gap-4 ${stylesContact} text-3xl text-gray-500`}>

@@ -6,24 +6,32 @@ import Header from './containers/header/Header';
 import About from './components/about/About';
 import Project from "./components/project/Project"
 import Contact from "./components/contact/Contact"
+import { useState, React } from "react";
+import { LanguageContext } from './containers/header/LanguageContext';
 
 function App() {
+
+  const [language, setLanguage] = useState("ingles");
+
   return (
     
-      <Router>
-        <div className="App bg-gray-200">
-        <Header></Header>
-          <Routes>
-          <Route path="/home" exact element={<Main></Main>} />
-          <Route path="/home/about" exact element={<About></About>} />
-          <Route path="/home/project" exact element={<Project></Project>} />
-          <Route path="/home/contact" exact element={<Contact></Contact>} />
-        </Routes>
-     
-        <Footer></Footer>
-      </div>
+      <LanguageContext.Provider value={{language, setLanguage}}>
+        <Router>
+            <div className="App bg-gray-200">
+            <Header></Header>
+            
+              <Routes>
+              <Route path="/home" exact element={<Main></Main>} />
+              <Route path="/home/about" exact element={<About></About>} />
+              <Route path="/home/project" exact element={<Project></Project>} />
+              <Route path="/home/contact" exact element={<Contact></Contact>} />
+            </Routes>
+        
+            <Footer></Footer>
+          </div>
 
       </Router>
+      </LanguageContext.Provider>
 
      
   );
