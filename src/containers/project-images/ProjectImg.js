@@ -1,28 +1,64 @@
-import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill } from "react-icons/bs";
-import acadSite from "../../assets/gym.PNG"
+import {
+  BsFillArrowLeftCircleFill,
+  BsFillArrowRightCircleFill,
+} from "react-icons/bs";
+import { useRef, useState } from "react";
+import "./ProjectImg.css";
 
-
-function ProjectImg({img1, img2, img3, titulo, url1, url2, url3}){
-    return (
-        <div className="pb-6 pt-20">
-            <h1 className="pb-6 w-[80%] m-auto text-lg font-bold">{titulo}</h1>
-            <div className="h-[12rem] flex items-center justify-center">
-                <BsFillArrowLeftCircleFill className="w-[10%] text-lg text-gray-400 hover:text-gray-800 duration-300 hover:cursor-pointer"></BsFillArrowLeftCircleFill>
-                <div className="grid gap-8 font-bold w-[80%] m-auto grid-cols-3">
-                    <div className="h-full">
-                        <a target="__blank" href={url1}><img alt="popflix" src={img1} className="hover:scale-110 duration-300 rounded-2xl h-full"></img></a>
-                    </div>
-                    <div className="h-[12rem]">
-                        <a target="__blank" href={url2}><img alt="memory-game" className="hover:scale-110 duration-300 h-full rounded-2xl" src={img2}></img></a>
-                    </div>
-                    <div className="h-[12rem]">
-                        <a target="__blank" href={url3}><img alt="old port" className="hover:scale-110 duration-300 h-full rounded-2xl" src={img3}></img></a>
-                    </div>
-                </div>
-                <BsFillArrowRightCircleFill className="w-[10%] text-lg text-gray-400 hover:text-gray-800 duration-300 hover:cursor-pointer"></BsFillArrowRightCircleFill>
-            </div>
+function ProjectImg({ tecnologia, titulo, url1, url2, url3 }) {
+  const elementRef = useRef(null);
+  const [arrowDisable, setArrowDisable] = useState(true);
+  const handleHorizantalScroll = (element, speed, distance, step) => {
+    let scrollAmount = 0;
+    const slideTimer = setInterval(() => {
+      
+      element.scrollLeft += step;
+      scrollAmount += Math.abs(step);
+      if (scrollAmount >= distance) {
+        clearInterval(slideTimer);
+      }
+      if (element.scrollLeft === 0) {
+        setArrowDisable(true);
+      } else {
+        setArrowDisable(false);
+      }
+    }, speed);
+  };
+  return (
+    <div className="pb-6 pt-20">
+      <h1 className="pb-6 w-[80%] m-auto text-lg font-bold">{titulo}</h1>
+      <div className="h-[12rem] flex items-center justify-center">
+        <BsFillArrowLeftCircleFill
+          disabled={arrowDisable}
+          onClick={() => {
+            handleHorizantalScroll(elementRef.current, 15, 400, -10);
+          }}
+          className="w-[10%] text-lg text-gray-400 hover:text-gray-800 duration-300 hover:cursor-pointer"
+        ></BsFillArrowLeftCircleFill>
+        <div id="grider" className="h-[15rem] w-[80%]">
+          <div
+            ref={elementRef}
+            id="slider"
+            className="no-scrollbar h-[15rem] flex items-center gap-8"
+          >
+            {tecnologia.map((item) => (
+              <img
+                src={item.img}
+                key={item.id}
+                className="h-[10rem] rounded-2xl"
+              />
+            ))}
+          </div>
         </div>
-    )
+        <BsFillArrowRightCircleFill
+          onClick={() => {
+            handleHorizantalScroll(elementRef.current, 15, 400, 10);
+          }}
+          className="w-[10%] text-lg text-gray-400 hover:text-gray-800 duration-300 hover:cursor-pointer"
+        ></BsFillArrowRightCircleFill>
+      </div>
+    </div>
+  );
 }
 
-export default ProjectImg
+export default ProjectImg;

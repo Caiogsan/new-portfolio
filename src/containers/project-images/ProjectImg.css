@@ -1,0 +1,12 @@
+#grider {
+  display: flex;
+  justify-content: center;
+}
+
+#slider {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc(34% - 2rem);
+  }

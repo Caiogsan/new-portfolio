@@ -101,7 +101,7 @@ function Header() {
                     ></IoIosArrowDown>
 
                     <div className="absolute rounded right-0 h-16 top-1 bg-gray-100 w-[3.5rem]">
-                      <div className="flex pt-8 h-full w-full justify-center">
+                      <div className="flex pt-8 h-full w-full justify-start pl-2">
                         <ReactCountryFlag
                           onClick={switchLang}
                           id="portugues"
@@ -143,7 +143,7 @@ function Header() {
                   ></IoIosArrowDown>
 
                   <div className="absolute rounded right-0 h-16 top-1 bg-gray-100 w-[3.5rem]">
-                    <div className="flex pt-8 h-full w-full justify-center">
+                    <div className="flex pt-8 h-full w-full pl-2 justify-start">
                       <ReactCountryFlag
                         onClick={switchLang}
                         id="ingles"
