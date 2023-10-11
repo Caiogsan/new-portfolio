@@ -4,8 +4,8 @@ import { html, tailwind, javascript, react } from "../project/projectData";
 function Project(){
     return (
         <div className="w-[90%] bg-white font-navbar m-auto">
-            <div className="pt-40">
-                <Presentation texto1={"Things I’ve made trying to put my dent in the universe."}
+            <div className="pt-32">
+                <Presentation texto1={"Things I’ve made trying to get better every day."}
                 stylesContact={'hidden'}
                 stylesGeneral={'w-[80%]  m-auto'}
                 stylesTxt={'w-[80%] justify-around'}

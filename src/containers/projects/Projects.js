@@ -35,7 +35,7 @@ function Projects(){
                 </div>
                 <div className="h-[12rem]">
                     <h1 className="pb-4">Antigo portfolio</h1>
-                    <a href=""><img alt="old port" className="hover:scale-110 duration-300 h-full rounded-2xl" src={oldPort}></img></a>
+                    <a href="https://caiogsan.github.io/My-PortFolio/"><img alt="old port" className="hover:scale-110 duration-300 h-full rounded-2xl" src={oldPort}></img></a>
                 </div>
             </div>
         </div>

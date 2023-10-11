@@ -25,7 +25,7 @@ function ProjectImg({ tecnologia, titulo, url1, url2, url3 }) {
     }, speed);
   };
   return (
-    <div className="pb-6 pt-20">
+    <div className="pb-6 ">
       <h1 className="pb-6 w-[80%] m-auto text-lg font-bold">{titulo}</h1>
       <div className="h-[12rem] flex items-center justify-center">
         <BsFillArrowLeftCircleFill
@@ -42,11 +42,13 @@ function ProjectImg({ tecnologia, titulo, url1, url2, url3 }) {
             className="no-scrollbar h-[15rem] flex items-center gap-8"
           >
             {tecnologia.map((item) => (
-              <img
+              <a>
+                <img
                 src={item.img}
                 key={item.id}
                 className="h-[10rem] rounded-2xl"
               />
+              </a>
             ))}
           </div>
         </div>

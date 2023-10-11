@@ -17,7 +17,7 @@ function App() {
     
       <LanguageContext.Provider value={{language, setLanguage}}>
         <Router>
-            <div className="App bg-gray-200">
+            <div className="App bg-gray-200" id='teste'>
             <Header></Header>
             
               <Routes>

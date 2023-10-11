@@ -26,80 +26,98 @@ export const html = [
 export const tailwind = [
     {
         id:3,
-        img: gpt3
+        img: gpt3,
+        link: "https://caiogsan.github.io/app-gpt3/"
     },
     {
         id:1,
-        img: acadSite
+        img: acadSite,
+        link: "https://caiogsan.github.io/proj-acad/"
     },
     {
         id:2,
-        img: tiago
+        img: tiago,
+        link: "https://caiogsan.github.io/Projeto-tiago/"
     },
     {
         id:4,
-        img: popflix
+        img: popflix,
+        link: "https://caiogsan.github.io/pop-flix/"
     },
     {
         id:5,
-        img: portfolioOld
+        img: portfolioOld,
+        link: "https://caiogsan.github.io/My-PortFolio/"
     },
     {
         id:6,
-        img: match
+        img: match,
+        link: "https://caiogsan.github.io/match-game/"
     },
 ]
 
 export const javascript = [
     {
         id:1,
-        img: match
+        img: match,
+        link: "https://caiogsan.github.io/match-game/"
     },
     {
         id:2,
-        img: popflix
+        img: popflix,
+        link: "https://caiogsan.github.io/pop-flix/"
     },
     {
         id:3,
-        img: portfolioOld
+        img: portfolioOld,
+        link: "https://caiogsan.github.io/My-PortFolio/"
     },
     {
         id:4,
-        img: gpt3
+        img: gpt3,
+        link: "https://caiogsan.github.io/app-gpt3/"
     },
     {
         id:5,
-        img: acadSite
+        img: acadSite,
+        link: "https://caiogsan.github.io/proj-acad/"
     },
     {
         id:6,
-        img: tiago
+        img: tiago,
+        link: "https://caiogsan.github.io/Projeto-tiago/"
     }
 ]
 
 export const react = [
     {
         id:5,
-        img: acadSite
+        img: acadSite,
+        link: "https://caiogsan.github.io/proj-acad/"
     },
     {
         id:6,
-        img: tiago
+        img: tiago,
+        link: "https://caiogsan.github.io/Projeto-tiago/"
     },
     {
         id:4,
-        img: gpt3
+        img: gpt3,
+        link: "https://caiogsan.github.io/app-gpt3/"
     },
     {
         id:2,
-        img: popflix
+        img: popflix,
+        link: "https://caiogsan.github.io/pop-flix/"
     },
     {
         id:3,
-        img: portfolioOld
+        img: portfolioOld,
+        link: "https://caiogsan.github.io/My-PortFolio/"
     },
     {
         id:1,
-        img: match
+        img: match,
+        link: "https://caiogsan.github.io/match-game/"
     },
 ]
