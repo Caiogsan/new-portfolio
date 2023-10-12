@@ -35,7 +35,7 @@ function Header() {
         <div className=" m-auto w-[80%] md:w-[90%]">
           <div className="flex justify-between m-auto w-[90%] 2xl:w-[80%] relative top-6 items-center">
             <div className="h-10 hidden md:flex">
-              <Link to={"/new-portfolio/home"}>
+              <Link to={"/new-portfolio"}>
                 <img className="h-full rounded-full" src={eu}></img>
               </Link>
             </div>
