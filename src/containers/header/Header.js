@@ -42,31 +42,31 @@ function Header() {
             {language === "ingles" ? (
               <ul className="flex bg-white font-navbar sm:gap-10 gap-2 md:gap-12 font-semibold justify-between text-xs shadow-lg py-3 px-6 sm:px-8 border-[1px] border-gray-100 text-[#27272a] rounded-full">
                 <li className="hover:cursor-pointer duration-300 hover:text-blue-300">
-                  <Link to={"/new-portfolio/home"}>Home</Link>
+                  <Link to={"/new-portfolio"}>Home</Link>
                 </li>
                 <li className="hover:cursor-pointer duration-300 hover:text-blue-300">
-                  <Link to={"/new-portfolio/home/about"}>About</Link>
+                  <Link to={"/new-portfolio/about"}>About</Link>
                 </li>
                 <li className="hover:cursor-pointer duration-300 hover:text-blue-300">
-                  <Link to={"/new-portfolio/home/project"}>Projects</Link>
+                  <Link to={"/new-portfolio/project"}>Projects</Link>
                 </li>
                 <li className="hover:cursor-pointer duration-300 hover:text-blue-300">
-                  <Link to={"/new-portfolio/home/contact"}>Contact</Link>
+                  <Link to={"/new-portfolio/contact"}>Contact</Link>
                 </li>
               </ul>
             ) : (
               <ul className="flex bg-white font-navbar w-[25rem] font-semibold justify-between text-xs shadow-lg py-3 px-8 border-[1px] border-gray-100 text-[#27272a] rounded-full">
                 <li className="hover:cursor-pointer duration-300 hover:text-blue-300">
-                  <Link to={"/new-portfolio/home"}>Inicio</Link>
+                  <Link to={"/new-portfolio"}>Inicio</Link>
                 </li>
                 <li className="hover:cursor-pointer duration-300 hover:text-blue-300">
-                  <Link to={"/new-portfolio/home/about"}>Sobre</Link>
+                  <Link to={"/new-portfolio/about"}>Sobre</Link>
                 </li>
                 <li className="hover:cursor-pointer duration-300 hover:text-blue-300">
-                  <Link to={"/new-portfolio/home/project"}>Projetos</Link>
+                  <Link to={"/new-portfolio/project"}>Projetos</Link>
                 </li>
                 <li className="hover:cursor-pointer duration-300 hover:text-blue-300">
-                  <Link to={"/new-portfolio/home/contact"}>Contato</Link>
+                  <Link to={"/new-portfolio/contact"}>Contato</Link>
                 </li>
               </ul>
             )}

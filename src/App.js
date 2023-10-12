@@ -21,10 +21,10 @@ function App() {
             <Header></Header>
             
               <Routes>
-              <Route path="/new-portfolio/home" exact element={<Main></Main>} />
-              <Route path="/new-portfolio/home/about" exact element={<About></About>} />
-              <Route path="/new-portfolio/home/project" exact element={<Project></Project>} />
-              <Route path="/new-portfolio/home/contact" exact element={<Contact></Contact>} />
+              <Route path="/new-portfolio" exact element={<Main></Main>} />
+              <Route path="/new-portfolio/about" exact element={<About></About>} />
+              <Route path="/new-portfolio/project" exact element={<Project></Project>} />
+              <Route path="/new-portfolio/contact" exact element={<Contact></Contact>} />
             </Routes>
         
             <Footer></Footer>
