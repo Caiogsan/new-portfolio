@@ -35,38 +35,38 @@ function Header() {
         <div className=" m-auto w-[80%] md:w-[90%]">
           <div className="flex justify-between m-auto w-[90%] 2xl:w-[80%] relative top-6 items-center">
             <div className="h-10 hidden md:flex">
-              <Link to={"/home"}>
+              <Link to={"/new-portfolio/home"}>
                 <img className="h-full rounded-full" src={eu}></img>
               </Link>
             </div>
             {language === "ingles" ? (
               <ul className="flex bg-white font-navbar sm:gap-10 gap-2 md:gap-12 font-semibold justify-between text-xs shadow-lg py-3 px-6 sm:px-8 border-[1px] border-gray-100 text-[#27272a] rounded-full">
                 <li className="hover:cursor-pointer duration-300 hover:text-blue-300">
-                  <Link to={"/home"}>Home</Link>
+                  <Link to={"/new-portfolio/home"}>Home</Link>
                 </li>
                 <li className="hover:cursor-pointer duration-300 hover:text-blue-300">
-                  <Link to={"/home/about"}>About</Link>
+                  <Link to={"/new-portfolio/home/about"}>About</Link>
                 </li>
                 <li className="hover:cursor-pointer duration-300 hover:text-blue-300">
-                  <Link to={"/home/project"}>Projects</Link>
+                  <Link to={"/new-portfolio/home/project"}>Projects</Link>
                 </li>
                 <li className="hover:cursor-pointer duration-300 hover:text-blue-300">
-                  <Link to={"/home/contact"}>Contact</Link>
+                  <Link to={"/new-portfolio/home/contact"}>Contact</Link>
                 </li>
               </ul>
             ) : (
               <ul className="flex bg-white font-navbar w-[25rem] font-semibold justify-between text-xs shadow-lg py-3 px-8 border-[1px] border-gray-100 text-[#27272a] rounded-full">
                 <li className="hover:cursor-pointer duration-300 hover:text-blue-300">
-                  <Link to={"/home"}>Inicio</Link>
+                  <Link to={"/new-portfolio/home"}>Inicio</Link>
                 </li>
                 <li className="hover:cursor-pointer duration-300 hover:text-blue-300">
-                  <Link to={"/home/about"}>Sobre</Link>
+                  <Link to={"/new-portfolio/home/about"}>Sobre</Link>
                 </li>
                 <li className="hover:cursor-pointer duration-300 hover:text-blue-300">
-                  <Link to={"/home/project"}>Projetos</Link>
+                  <Link to={"/new-portfolio/home/project"}>Projetos</Link>
                 </li>
                 <li className="hover:cursor-pointer duration-300 hover:text-blue-300">
-                  <Link to={"/home/contact"}>Contato</Link>
+                  <Link to={"/new-portfolio/home/contact"}>Contato</Link>
                 </li>
               </ul>
             )}
