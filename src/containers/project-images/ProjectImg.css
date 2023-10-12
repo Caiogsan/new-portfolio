@@ -10,3 +10,21 @@
     grid-auto-flow: column;
     grid-auto-columns: calc(34% - 2rem);
   }
+
+@media screen and (max-width: 1000px){
+  #slider {
+    grid-auto-columns: calc(50% - 2rem);
+  }
+}
+
+@media screen and (max-width: 700px){
+  #slider {
+    grid-auto-columns: calc(80%);
+  }
+}
+
+@media screen and (max-width: 500px){
+  #slider {
+    grid-auto-columns: calc(100%);
+  }
+}

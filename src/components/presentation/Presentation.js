@@ -6,17 +6,17 @@ import { SiCodewars } from "react-icons/si";
 function Presentation({texto1, texto2, stylesGeneral, stylesImg, stylesTxt, stylesTxt2, stylesContact}){
     return (
         <div>
-            <div className={`flex ${stylesGeneral} h-[23rem] gap-4 font-navbar mb-6`}>
-                <div className={`w-[60%] flex flex-col justify-between ${stylesTxt}`}>
-                    <h1 className="text-[40px] text-5xl leading-tight font-bold ">{texto1}</h1>
-                    <p className={`text-md flex leading-7`}>{texto2}</p>
+            <div className={`flex xl:flex-row items-center flex-col-reverse w-full ${stylesGeneral} gap-4 font-navbar mb-8`}>
+                <div className={`${stylesTxt} mt-16 xl:mt-0 mb-4 md:w-[80%]  gap-16 lg:w-[80%] h-full w-[90%] sm:w-[90%] m-auto flex flex-col`}>
+                    <h1 className="lg:text-5xl  md:text-4xl mr-2 xl:text-[41px] sm:text-4xl text-4xl leading-snug font-bold ">{texto1}</h1>
+                    <p className={`lg:text-xl xl:text-[18px] text-lg md:text-xl w-[90%] sm:text-lg flex`}>{texto2}</p>
                     
                 </div>  
-                <div className={`w-[40%] ${stylesImg} flex justify-center`}>
-                    <img className="rounded-[30px] rotate-3" src={caio}></img>
+                <div className={`w-[90%] md:w-[80%] xl:w-[40%] ${stylesImg} flex justify-start`}>
+                    <img className="rounded-[30px]  w-[60%] xl:w-full rotate-3" src={caio}></img>
                 </div>
             </div>
-            <ul className={`flex gap-4 ${stylesContact} text-3xl text-gray-500`}>
+            <ul className={`flex xl:w-full w-[90%] md:w-[80%]  m-auto gap-4 ${stylesContact} text-3xl text-gray-500`}>
                 <li className="hover:cursor-pointer hover:text-black duration-300"><a target="__blank" href="https://github.com/Caiogsan"><AiOutlineGithub></AiOutlineGithub></a></li>
                 <li className="hover:cursor-pointer hover:text-black duration-300"><a target="__blank" href=""><AiOutlineInstagram></AiOutlineInstagram></a></li>
                 <li className="hover:cursor-pointer hover:text-black duration-300"><a target="__blank" href="mailto:caiogsan@hotmail.com"><AiOutlineMail></AiOutlineMail></a></li>

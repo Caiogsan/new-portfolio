@@ -7,7 +7,7 @@ function About(){
 
     const {language, setLanguage} = useContext(LanguageContext)
     return (
-        <div className="w-[90%] pt-40 bg-white m-auto">
+        <div className="w-[90%] pt-32 bg-white m-auto">
             <div className="w-[90%] m-auto pb-28">
                 <Presentation texto1={language === "ingles" ? "My name is Caio Santos. I live in Brazil, Minas Gerais and i am 21 years old." : 'Meu nome é Caio Santos. Eu vivo no Brasil, Minas Gerais e tenho 21 anos de idade.'} texto2={
                 

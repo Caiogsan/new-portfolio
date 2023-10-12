@@ -32,15 +32,15 @@ function Header() {
   return (
     <LanguageContext.Provider value={language}>
       <div className="fixed z-10 w-full">
-        <div className=" m-auto w-[90%]">
-          <div className="flex justify-between m-auto w-[90%] relative top-6 items-center">
-            <div className="h-10">
+        <div className=" m-auto w-[80%] md:w-[90%]">
+          <div className="flex justify-between m-auto w-[90%] 2xl:w-[80%] relative top-6 items-center">
+            <div className="h-10 hidden md:flex">
               <Link to={"/home"}>
                 <img className="h-full rounded-full" src={eu}></img>
               </Link>
             </div>
             {language === "ingles" ? (
-              <ul className="flex bg-white font-navbar w-[25rem] font-semibold justify-between text-xs shadow-lg py-3 px-8 border-[1px] border-gray-100 text-[#27272a] rounded-full">
+              <ul className="flex bg-white font-navbar sm:gap-10 gap-2 md:gap-12 font-semibold justify-between text-xs shadow-lg py-3 px-6 sm:px-8 border-[1px] border-gray-100 text-[#27272a] rounded-full">
                 <li className="hover:cursor-pointer duration-300 hover:text-blue-300">
                   <Link to={"/home"}>Home</Link>
                 </li>
@@ -76,7 +76,8 @@ function Header() {
                   <div className="flex items-center gap-1">
                     <ReactCountryFlag
                       id="ingles"
-                      className="text-xl"
+                      onClick={switchOpt}
+                      className="text-xl hover:cursor-pointer"
                       countryCode="US"
                       svg
                     />
@@ -89,8 +90,9 @@ function Header() {
                 ) : (
                   <div className="flex gap-1 items-center">
                     <ReactCountryFlag
+                      onClick={switchOpt}
                       id="ingles"
-                      className="text-xl  z-10"
+                      className="text-xl hover:cursor-pointer z-10"
                       countryCode="US"
                       svg
                     />
@@ -118,7 +120,8 @@ function Header() {
                 <div className="flex items-center gap-1">
                   <ReactCountryFlag
                     id="portugues"
-                    className="text-xl"
+                    onClick={switchOpt}
+                    className="text-xl hover:cursor-pointer"
                     countryCode="BR"
                     svg
                   />
@@ -132,7 +135,8 @@ function Header() {
                 <div className="flex gap-1 items-center">
                   <ReactCountryFlag
                     id="ingles"
-                    className="text-xl  z-10"
+                    onClick={switchOpt}
+                    className="text-xl hover:cursor-pointer z-10"
                     countryCode="BR"
                     svg
                   />

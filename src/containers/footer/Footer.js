@@ -5,9 +5,9 @@ function Footer(){
     return (
         <div>
             <div className="border-t-2  py-12 border-gray-500 bg-white m-auto w-[90%]">
-                <div className="w-[80%] m-auto flex">
+                <div className="sm:w-[80%] w-[90%] m-auto flex">
                     <div className="w-[40%]">
-                        <ul className="flex justify-between text-sm text-gray-400">
+                        <ul className="flex flex-col sm:flex-row gap-1 justify-between text-sm text-gray-400">
                             <li className="hover:cursor-pointer duration-300 hover:text-blue-300"><Link to={"/home"}>Home</Link></li>
                             <li className="hover:cursor-pointer duration-300 hover:text-blue-300"><Link to={"/home/about"}>About</Link></li>
                             <li className="hover:cursor-pointer duration-300 hover:text-blue-300"><Link to={"/home/project"}>Projects</Link></li>
