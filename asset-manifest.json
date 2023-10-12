@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/new-portfolio/static/css/main.376db3e6.css",
-    "main.js": "/new-portfolio/static/js/main.41b64227.js",
-    "static/media/popflix.PNG": "/new-portfolio/static/media/popflix.62dbdce909c40ac4a189.PNG",
-    "static/media/gym.PNG": "/new-portfolio/static/media/gym.3ebf633c12cf1c8b65ce.PNG",
-    "static/media/tiago.PNG": "/new-portfolio/static/media/tiago.3bc6686f86c236d30219.PNG",
-    "static/media/3.PNG": "/new-portfolio/static/media/3.797b53fbc9e61e701063.PNG",
-    "static/media/match.PNG": "/new-portfolio/static/media/match.472f9c1976e2434cc047.PNG",
-    "static/media/scorpiao.PNG": "/new-portfolio/static/media/scorpiao.82d475b8565173c353f7.PNG",
-    "static/media/android.PNG": "/new-portfolio/static/media/android.add59778c547bfee13a7.PNG",
-    "static/media/react.png": "/new-portfolio/static/media/react.81ed438b18e24116794d.png",
-    "static/media/nodeJs.png": "/new-portfolio/static/media/nodeJs.d6153fa85318a68d9bca.png",
-    "static/media/me.PNG": "/new-portfolio/static/media/me.d6e172a6af512aba27ec.PNG",
-    "static/media/personal.PNG": "/new-portfolio/static/media/personal.a4a40ca4b59f68a11d32.PNG",
-    "static/media/cordel.PNG": "/new-portfolio/static/media/cordel.886f9f72f1f32324d703.PNG",
-    "static/media/css3.png": "/new-portfolio/static/media/css3.bc75ccc78e3bf74f8aed.png",
-    "static/media/tailwind.png": "/new-portfolio/static/media/tailwind.6c93beb73544d72804f2.png",
-    "static/media/portfolio-old.PNG": "/new-portfolio/static/media/portfolio-old.35415e8de08242dbdd3b.PNG",
-    "static/media/javaScript.png": "/new-portfolio/static/media/javaScript.266bd9fb2663dcc057b4.png",
-    "index.html": "/new-portfolio/index.html",
-    "main.376db3e6.css.map": "/new-portfolio/static/css/main.376db3e6.css.map",
-    "main.41b64227.js.map": "/new-portfolio/static/js/main.41b64227.js.map"
+    "main.css": "/new-portfolio/home/static/css/main.376db3e6.css",
+    "main.js": "/new-portfolio/home/static/js/main.028a7eb9.js",
+    "static/media/popflix.PNG": "/new-portfolio/home/static/media/popflix.62dbdce909c40ac4a189.PNG",
+    "static/media/gym.PNG": "/new-portfolio/home/static/media/gym.3ebf633c12cf1c8b65ce.PNG",
+    "static/media/tiago.PNG": "/new-portfolio/home/static/media/tiago.3bc6686f86c236d30219.PNG",
+    "static/media/3.PNG": "/new-portfolio/home/static/media/3.797b53fbc9e61e701063.PNG",
+    "static/media/match.PNG": "/new-portfolio/home/static/media/match.472f9c1976e2434cc047.PNG",
+    "static/media/scorpiao.PNG": "/new-portfolio/home/static/media/scorpiao.82d475b8565173c353f7.PNG",
+    "static/media/android.PNG": "/new-portfolio/home/static/media/android.add59778c547bfee13a7.PNG",
+    "static/media/react.png": "/new-portfolio/home/static/media/react.81ed438b18e24116794d.png",
+    "static/media/nodeJs.png": "/new-portfolio/home/static/media/nodeJs.d6153fa85318a68d9bca.png",
+    "static/media/me.PNG": "/new-portfolio/home/static/media/me.d6e172a6af512aba27ec.PNG",
+    "static/media/personal.PNG": "/new-portfolio/home/static/media/personal.a4a40ca4b59f68a11d32.PNG",
+    "static/media/cordel.PNG": "/new-portfolio/home/static/media/cordel.886f9f72f1f32324d703.PNG",
+    "static/media/css3.png": "/new-portfolio/home/static/media/css3.bc75ccc78e3bf74f8aed.png",
+    "static/media/tailwind.png": "/new-portfolio/home/static/media/tailwind.6c93beb73544d72804f2.png",
+    "static/media/portfolio-old.PNG": "/new-portfolio/home/static/media/portfolio-old.35415e8de08242dbdd3b.PNG",
+    "static/media/javaScript.png": "/new-portfolio/home/static/media/javaScript.266bd9fb2663dcc057b4.png",
+    "index.html": "/new-portfolio/home/index.html",
+    "main.376db3e6.css.map": "/new-portfolio/home/static/css/main.376db3e6.css.map",
+    "main.028a7eb9.js.map": "/new-portfolio/home/static/js/main.028a7eb9.js.map"
   },
   "entrypoints": [
     "static/css/main.376db3e6.css",
-    "static/js/main.41b64227.js"
+    "static/js/main.028a7eb9.js"
   ]
 }
