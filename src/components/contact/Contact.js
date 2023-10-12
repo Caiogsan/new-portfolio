@@ -3,6 +3,11 @@ import { AiOutlineGithub, AiOutlineInstagram, AiOutlineMail, AiFillLinkedin } fr
 import { useContext } from 'react';
 import { LanguageContext } from "../../containers/header/LanguageContext";
 
+function teste (){
+    return <a>caiogsan@hotmail.com</a>
+    
+}
+
 function Contact(){
 
     const {language, setLanguage} = useContext(LanguageContext)
@@ -15,25 +20,25 @@ function Contact(){
                     stylesGeneral={'w-[80%] m-auto'}
                     stylesTxt={'w-full justify-around'}
                     stylesImg={'hidden'}
-                    texto2={"Thank you for your interest in getting in touch with me. I welcome your feedback, questions, and suggestions. If you have a specific question or comment, please feel free to email me directly at   mail@tharindu.dev. I make an effort to respond to all messages within 24 hours, although it may take me longer during busy periods. Alternatively, you can use the contact form on my website to get in touch. Simply fill out the required fields and I'll get back to you as soon as possible. Finally, if you prefer to connect on social media, you can find me on https://instagram.com/. I post regular updates and engage with my followers there, so don't hesitate to reach out. Thanks again for your interest, and I look forward to hearing from you!"}
+                    texto2={language === "ingles" ? `Thank you for your interest in getting in touch with me. I welcome your feedback, questions, and suggestions. If you have a specific question or comment, please feel free to email me directly at caiogsan@hotmail.com, i respond to all messages within 24 hours. If you prefer to connect on social media, you can find me on Linkedin or Instagram where i post regular updates of my new projects and engage with all my connections, so please don't hesitate to reach out. Thanks again for your interest, and I look forward to hearing from you!` : "Muito obrigado pelo seu interesse em entre em contato comigo. Eu apreciaria muito o seu feedback, perguntas ou qualquer tipo de sugestão, se você tiver alguma, por favor fique a vontade para me enviar um email em caiogsan@hotmail.com, eu respondo todas as mensagens em até 24 horas. Se você preferir me contactar por rede social, você consegue me encontrar no Linkedin e no Instagram aonde eu posto todos os meus novos projetos e interajo com todas as minhas conexões, por favor não hesite em me contactar. Muito obrigado novamente pelo seu interesse. Espero ansiosamente sua mensagem."}
                 ></Presentation>
                 <ul className={`flex flex-col w-[80%] pt-10 pb-14 m-auto gap-4  text-gray-500`}>
                     <li className="hover:cursor-pointer hover:text-black duration-300">
                         <a target="__blank" href="https://www.linkedin.com/in/caio-santos1206/" className="flex items-center">
                             <AiFillLinkedin className="text-2xl mr-4"></AiFillLinkedin>
-                            <p className="text-sm">Me envie uma mensagem pelo Linkedin</p>
+                            <p className="text-sm">{language === "ingles" ? "Follow me on Linkedin" : "Me siga no Linkedin"}</p>
                         </a>
                     </li>
                     <li className="hover:cursor-pointer hover:text-black duration-300">
                         <a href="" className="flex items-center">
                             <AiOutlineInstagram className="text-2xl mr-4"></AiOutlineInstagram>
-                            <p className="text-sm">Me envie uma mensagem pelo instagram</p>
+                            <p className="text-sm">{language === "ingles" ? "Follow me on Instagram" : "Me siga no Instagram"}</p>
                         </a>
                     </li>
                     <li className="hover:cursor-pointer hover:text-black duration-300">
                         <a target="__blank" href="mailto:caiogsan@hotmail.com" className="flex items-center">
                             <AiOutlineMail className="text-2xl mr-4"></AiOutlineMail>
-                            <p className="text-sm">Me envie um Email</p>
+                            <p className="text-sm">{language === "ingles" ? "Send me an email" : "Me envie um email"}</p>
                         </a>
                     </li>
                 </ul>

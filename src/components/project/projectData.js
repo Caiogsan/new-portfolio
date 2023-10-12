@@ -11,15 +11,18 @@ import escorpiao from "../../assets/scorpiao.PNG"
 export const html = [
     {
         id:1,
-        img: escorpiao
+        img: escorpiao,
+        link: "https://caiogsan.github.io/Gym-Project/"
     },
     {
         id:2,
-        img: cordel
+        img: cordel,
+        link: "https://caiogsan.github.io/projeto4/"
     },
     {
         id:3,
-        img: android
+        img: android,
+        link: "https://caiogsan.github.io/projeto1/"
     },
 ]
 

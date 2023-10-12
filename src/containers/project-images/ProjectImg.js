@@ -5,7 +5,7 @@ import {
 import { useRef, useState } from "react";
 import "./ProjectImg.css";
 
-function ProjectImg({ tecnologia, titulo, url1, url2, url3 }) {
+function ProjectImg({ tecnologia, titulo, url }) {
   const elementRef = useRef(null);
   const [arrowDisable, setArrowDisable] = useState(true);
   const handleHorizantalScroll = (element, speed, distance, step) => {
@@ -42,12 +42,10 @@ function ProjectImg({ tecnologia, titulo, url1, url2, url3 }) {
             className="no-scrollbar h-[15rem] flex items-center gap-8"
           >
             {tecnologia.map((item) => (
-              <a>
-                <img
-                src={item.img}
+              <a target="__blank" href={item.link}>
+              <img src={item.img}
                 key={item.id}
-                className="h-[10rem] rounded-2xl"
-              />
+                className="h-[10rem] rounded-2xl" />
               </a>
             ))}
           </div>

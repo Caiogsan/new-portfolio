@@ -70,7 +70,7 @@ function Header() {
                 </li>
               </ul>
             )}
-            <div className=" bg-gray-200 rounded p-2">
+            <div className=" rounded p-2">
               {language === "ingles" ? (
                 showOpt ? (
                   <div className="flex items-center gap-1">
@@ -100,7 +100,7 @@ function Header() {
                       className=" z-10 hover:cursor-pointer"
                     ></IoIosArrowDown>
 
-                    <div className="absolute rounded right-0 h-16 top-1 bg-gray-100 w-[3.5rem]">
+                    <div className="absolute rounded right-0 h-16 top-1 w-[3.5rem]">
                       <div className="flex pt-8 h-full w-full justify-start pl-2">
                         <ReactCountryFlag
                           onClick={switchLang}
@@ -142,7 +142,7 @@ function Header() {
                     className=" z-10 hover:cursor-pointer"
                   ></IoIosArrowDown>
 
-                  <div className="absolute rounded right-0 h-16 top-1 bg-gray-100 w-[3.5rem]">
+                  <div className="absolute rounded right-0 h-16 top-1 w-[3.5rem]">
                     <div className="flex pt-8 h-full w-full pl-2 justify-start">
                       <ReactCountryFlag
                         onClick={switchLang}
