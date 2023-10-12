@@ -7,6 +7,7 @@ import tiago from "../../assets/tiago.PNG"
 import match from "../../assets/match.PNG"
 import gpt3 from "../../assets/3.PNG"
 import escorpiao from "../../assets/scorpiao.PNG"
+import marioGame from "../../assets/mario-game.PNG"
 
 export const html = [
     {
@@ -123,4 +124,11 @@ export const react = [
         img: match,
         link: "https://caiogsan.github.io/match-game/"
     },
+]
+
+export const canva = [
+    {
+        id:1,
+        img: marioGame,
+    }
 ]

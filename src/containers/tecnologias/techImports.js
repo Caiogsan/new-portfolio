@@ -5,5 +5,6 @@ import tailwind from "../../assets/tecnologias/tailwind.png"
 import react from "../../assets/tecnologias/react.png"
 import nodeJs from "../../assets/tecnologias/nodeJs.png"
 import github from "../../assets/tecnologias/github.png"
+import canva from "../../assets/tecnologias/canva.png"
 
-export { html5, css3, javascript, tailwind, react, nodeJs, github }
+export { html5, css3, javascript, tailwind, react, nodeJs, github, canva }

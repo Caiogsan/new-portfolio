@@ -1,4 +1,5 @@
 import { BiLogoTailwindCss } from "react-icons/bi";
+import { SiCanva } from "react-icons/si";
 import {
   BsFillArrowLeftCircleFill,
   BsFillArrowRightCircleFill,
@@ -11,6 +12,7 @@ import {
   react,
   nodeJs,
   github,
+  canva
 } from "./techImports";
 
 
@@ -36,7 +38,9 @@ function Tecnologias({ stylesTitulo, stylesGeral }) {
       break
       case react: setAtualTech(nodeJs)
       break
-      case nodeJs: setAtualTech(github)
+      case nodeJs: setAtualTech(canva)
+      break
+      case canva: setAtualTech(github)
       break
       case github:
       break
@@ -48,7 +52,9 @@ function Tecnologias({ stylesTitulo, stylesGeral }) {
 
   function btnSwitchTechLeft(){
     switch (atualTech){
-      case github: setAtualTech(nodeJs)
+      case github: setAtualTech(canva)
+      break
+      case canva: setAtualTech(nodeJs)
       break
       case nodeJs: setAtualTech(react)
       break
@@ -67,7 +73,7 @@ function Tecnologias({ stylesTitulo, stylesGeral }) {
         break
     }
   }
-
+  
   function switchTech(tech, text){
     setAtualTech(tech)
     setTextTech(text)
@@ -77,7 +83,7 @@ function Tecnologias({ stylesTitulo, stylesGeral }) {
   ];
   return (
     <div className={`pt-28 ${stylesGeral}`}>
-      <h1 className={`w-[90%] xl:w-full m-auto text-2xl ${stylesTitulo} font-bold font-navbar`}>
+      <h1 className={`w-[80%] xl:w-full m-auto text-2xl ${stylesTitulo} font-bold font-navbar`}>
         Tecnologias
       </h1>
       <div>
@@ -88,6 +94,7 @@ function Tecnologias({ stylesTitulo, stylesGeral }) {
           <BiLogoTailwindCss onClick={() => {switchTech(tailwind, 'Tailwind Css')}} className="hover:scale-110 hover:cursor-pointer duration-300"></BiLogoTailwindCss>
           <li onClick={() => {switchTech(react, 'React')}} className="fa-brands hover:scale-110 hover:cursor-pointer duration-300  fa-react"></li>
           <li onClick={() => {switchTech(nodeJs, 'Node')}} className="fa-brands hover:scale-110 hover:cursor-pointer duration-300 fa-node-js"></li>
+          <SiCanva onClick={() => {switchTech(canva, 'Canva')}} className="hover:scale-110 hover:cursor-pointer duration-300"></SiCanva>
           <li onClick={() => {switchTech(github, 'GitHub')}} className="fa-brands hover:scale-110 hover:cursor-pointer duration-300 fa-github"></li>
         </ul>
 

@@ -5,7 +5,7 @@ import {
 import { useRef, useState } from "react";
 import "./ProjectImg.css";
 
-function ProjectImg({ tecnologia, titulo, url }) {
+function ProjectImg({ tecnologia, titulo, url, stylesRoll }) {
   const elementRef = useRef(null);
   const [arrowDisable, setArrowDisable] = useState(true);
   const handleHorizantalScroll = (element, speed, distance, step) => {
@@ -39,7 +39,7 @@ function ProjectImg({ tecnologia, titulo, url }) {
           <div
             ref={elementRef}
             id="slider"
-            className="no-scrollbar h-[15rem] flex items-center gap-8"
+            className={`no-scrollbar ${stylesRoll} h-[15rem] flex items-center gap-8`}
           >
             {tecnologia.map((item) => (
               <a target="__blank" href={item.link}>

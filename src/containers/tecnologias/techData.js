@@ -5,6 +5,7 @@ import tailwind from "../../assets/tecnologias/tailwind.png"
 import react from "../../assets/tecnologias/react.png"
 import nodeJs from "../../assets/tecnologias/nodeJs.png"
 import github from "../../assets/tecnologias/github.png"
+import canva from "../../assets/tecnologias/canva.png"
 
 export const tech = [
     {
@@ -33,6 +34,10 @@ export const tech = [
     },
     {
         id: 7,
+        tech: canva
+    },
+    {
+        id: 8,
         tech: github
-    }
+    },
 ]
