@@ -7,9 +7,9 @@ function Presentation({texto1, texto2, stylesGeneral, stylesImg, stylesTxt, styl
     return (
         <div>
             <div className={`flex xl:flex-row items-center flex-col-reverse w-full ${stylesGeneral} gap-4 font-navbar mb-8`}>
-                <div className={`${stylesTxt} mt-16 xl:mt-0 mb-4 md:w-[80%]  gap-16 lg:w-[80%] h-full w-[90%] sm:w-[90%] m-auto flex flex-col`}>
-                    <h1 className="lg:text-5xl  md:text-4xl mr-2 xl:text-[41px] sm:text-4xl text-4xl leading-snug font-bold ">{texto1}</h1>
-                    <p className={`lg:text-xl xl:text-[18px] text-lg md:text-xl w-[90%] sm:text-lg flex`}>{texto2}</p>
+                <div className={`${stylesTxt} mt-16 xl:mt-0 mb-4 md:w-[80%] gap-16  lg:w-[80%] h-full w-[90%] sm:w-[90%] m-auto flex flex-col`}>
+                    <h1 className="lg:text-5xl  md:text-4xl mr-2 xl:text-3xl sm:text-4xl 2xl:text-5xl text-3xl leading-snug font-bold ">{texto1}</h1>
+                    <p className={`lg:text-xl xl:text-lg text-lg md:text-xl w-[90%] 2xl:text-2xl sm:text-lg flex`}>{texto2}</p>
                     
                 </div>  
                 <div className={`w-[90%] md:w-[80%] xl:w-[40%] ${stylesImg} flex justify-start`}>

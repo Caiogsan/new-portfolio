@@ -55,7 +55,7 @@ function Header() {
                 </li>
               </ul>
             ) : (
-              <ul className="flex bg-white font-navbar w-[25rem] font-semibold justify-between text-xs shadow-lg py-3 px-8 border-[1px] border-gray-100 text-[#27272a] rounded-full">
+              <ul className="flex bg-white font-navbar sm:gap-10 gap-2 md:gap-12 font-semibold justify-between text-xs shadow-lg py-3 px-6 sm:px-8 border-[1px] border-gray-100 text-[#27272a] rounded-full">
                 <li className="hover:cursor-pointer duration-300 hover:text-blue-300">
                   <Link to={"/new-portfolio"}>Inicio</Link>
                 </li>
@@ -147,7 +147,7 @@ function Header() {
                   ></IoIosArrowDown>
 
                   <div className="absolute rounded right-0 h-16 top-1 w-[3.5rem]">
-                    <div className="flex pt-8 h-full w-full pl-2 justify-start">
+                    <div className="flex pt-8 h-full w-full justify-start pl-2">
                       <ReactCountryFlag
                         onClick={switchLang}
                         id="ingles"
