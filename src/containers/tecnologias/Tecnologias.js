@@ -82,7 +82,7 @@ function Tecnologias({ stylesTitulo, stylesGeral }) {
     html5, css3, javascript, tailwind
   ];
   return (
-    <div className={`pt-28 ${stylesGeral}`}>
+    <div className={`pt-28 2xl:pt-40 ${stylesGeral}`}>
       <h1 className={`w-[80%] xl:w-full m-auto text-2xl ${stylesTitulo} font-bold font-navbar`}>
         Tecnologias
       </h1>
