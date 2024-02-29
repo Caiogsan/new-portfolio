@@ -1,5 +1,4 @@
-import { BiLogoTailwindCss } from "react-icons/bi";
-import { SiCanva } from "react-icons/si";
+import { BiLogoTailwindCss, BiLogoTypescript } from "react-icons/bi";
 import {
   BsFillArrowLeftCircleFill,
   BsFillArrowRightCircleFill,
@@ -12,7 +11,7 @@ import {
   react,
   nodeJs,
   github,
-  canva
+  typescript
 } from "./techImports";
 
 
@@ -28,19 +27,27 @@ function Tecnologias({ stylesTitulo, stylesGeral }) {
 
   function btnSwitchTechRight(){
     switch (atualTech){
-      case html5: setAtualTech(css3)
+      case html5: 
+      setAtualTech(css3)
+      setTextTech('CSS3')
       break
       case css3: setAtualTech(javascript)
+      setTextTech('JavaScript')
       break
       case javascript: setAtualTech(tailwind)
+      setTextTech('Tailwind')
       break
       case tailwind: setAtualTech(react)
+      setTextTech('React')
       break
       case react: setAtualTech(nodeJs)
+      setTextTech('NodeJs')
       break
-      case nodeJs: setAtualTech(canva)
+      case nodeJs: setAtualTech(typescript)
+      setTextTech('Typescript')
       break
-      case canva: setAtualTech(github)
+      case typescript: setAtualTech(github)
+      setTextTech('GitHub')
       break
       case github:
       break
@@ -52,19 +59,26 @@ function Tecnologias({ stylesTitulo, stylesGeral }) {
 
   function btnSwitchTechLeft(){
     switch (atualTech){
-      case github: setAtualTech(canva)
+      case github: setAtualTech(typescript)
+      setTextTech('Typescript')
       break
-      case canva: setAtualTech(nodeJs)
+      case typescript: setAtualTech(nodeJs)
+      setTextTech('NodeJs')
       break
       case nodeJs: setAtualTech(react)
+      setTextTech('React')
       break
       case react: setAtualTech(tailwind)
+      setTextTech('Tailwind')
       break
       case tailwind: setAtualTech(javascript)
+      setTextTech('JavaScript')
       break
       case javascript: setAtualTech(css3)
+      setTextTech('CSS3')
       break
       case css3: setAtualTech(html5)
+      setTextTech('HTML5')
       break
       case html5:
       break
@@ -87,14 +101,14 @@ function Tecnologias({ stylesTitulo, stylesGeral }) {
         Tecnologias
       </h1>
       <div>
-        <ul className="flex gap-4 sm:gap-8 md:gap-12 py-14 justify-center text-3xl sm:text-5xl">
+        <ul className="flex gap-4 sm:gap-8 md:gap-12 py-14 justify-center items-center text-3xl sm:text-5xl">
           <li onClick={() => {switchTech(html5, 'HTML5')}} className="fa-brands hover:cursor-pointer hover:scale-110 duration-300 fa-html5"></li>
           <li  onClick={() => {switchTech(css3, 'CSS3')}} className="fa-brands hover:cursor-pointer hover:scale-110 duration-300  fa-css3-alt"></li>
           <li onClick={() => {switchTech(javascript, 'JavaScript')}} className="fa-brands hover:cursor-pointer hover:scale-110 duration-300 fa-square-js"></li>
           <BiLogoTailwindCss onClick={() => {switchTech(tailwind, 'Tailwind Css')}} className="hover:scale-110 hover:cursor-pointer duration-300"></BiLogoTailwindCss>
           <li onClick={() => {switchTech(react, 'React')}} className="fa-brands hover:scale-110 hover:cursor-pointer duration-300  fa-react"></li>
           <li onClick={() => {switchTech(nodeJs, 'Node')}} className="fa-brands hover:scale-110 hover:cursor-pointer duration-300 fa-node-js"></li>
-          <SiCanva onClick={() => {switchTech(canva, 'Canva')}} className="hover:scale-110 hover:cursor-pointer duration-300"></SiCanva>
+          <BiLogoTypescript onClick={() => {switchTech(typescript, 'Typescript')}} className="hover:scale-110 hover:cursor-pointer text-[50px] duration-300"></BiLogoTypescript>
           <li onClick={() => {switchTech(github, 'GitHub')}} className="fa-brands hover:scale-110 hover:cursor-pointer duration-300 fa-github"></li>
         </ul>
 

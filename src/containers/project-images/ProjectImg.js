@@ -5,7 +5,7 @@ import {
 import { useRef, useState } from "react";
 import "./ProjectImg.css";
 
-function ProjectImg({ tecnologia, titulo, url, stylesRoll }) {
+function ProjectImg({ tecnologia, titulo, stylesRoll }) {
   const elementRef = useRef(null);
   const [arrowDisable, setArrowDisable] = useState(true);
   const handleHorizantalScroll = (element, speed, distance, step) => {
