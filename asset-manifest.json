@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/new-portfolio/static/css/main.6aaf551c.css",
-    "main.js": "/new-portfolio/static/js/main.33f024de.js",
+    "main.js": "/new-portfolio/static/js/main.5b1f4fb5.js",
     "static/media/popflix.PNG": "/new-portfolio/static/media/popflix.62dbdce909c40ac4a189.PNG",
     "static/media/gym.PNG": "/new-portfolio/static/media/gym.3ebf633c12cf1c8b65ce.PNG",
     "static/media/tiago.PNG": "/new-portfolio/static/media/tiago.3bc6686f86c236d30219.PNG",
@@ -14,7 +14,7 @@
     "static/media/me.PNG": "/new-portfolio/static/media/me.d6e172a6af512aba27ec.PNG",
     "static/media/personal.PNG": "/new-portfolio/static/media/personal.a4a40ca4b59f68a11d32.PNG",
     "static/media/songfy.JPG": "/new-portfolio/static/media/songfy.1fcd06ce23b77265d4ca.JPG",
-    "static/media/mario-game.PNG": "/new-portfolio/static/media/mario-game.b8ebcf73a1bad1130c10.PNG",
+    "static/media/nodelogo.jpg": "/new-portfolio/static/media/nodelogo.3086582caa7157db07ef.jpg",
     "static/media/cordel.PNG": "/new-portfolio/static/media/cordel.886f9f72f1f32324d703.PNG",
     "static/media/css3.png": "/new-portfolio/static/media/css3.bc75ccc78e3bf74f8aed.png",
     "static/media/tailwind.png": "/new-portfolio/static/media/tailwind.6c93beb73544d72804f2.png",
@@ -23,10 +23,10 @@
     "static/media/typescript.svg": "/new-portfolio/static/media/typescript.22b4f22ec3ee32c08fb2c0a25682bb5b.svg",
     "index.html": "/new-portfolio/index.html",
     "main.6aaf551c.css.map": "/new-portfolio/static/css/main.6aaf551c.css.map",
-    "main.33f024de.js.map": "/new-portfolio/static/js/main.33f024de.js.map"
+    "main.5b1f4fb5.js.map": "/new-portfolio/static/js/main.5b1f4fb5.js.map"
   },
   "entrypoints": [
     "static/css/main.6aaf551c.css",
-    "static/js/main.33f024de.js"
+    "static/js/main.5b1f4fb5.js"
   ]
 }
