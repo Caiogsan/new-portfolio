@@ -31,7 +31,7 @@ function  Projects(){
                 </div>
                 <div className="h-[12rem]">
                     <h1 className="pb-4">SongFy</h1>
-                    <a target="__blank" href="https://caiogsan.github.io/match-game/"><img alt="songfy" className="hover:scale-110 duration-300 h-full rounded-2xl" src={songfy}></img></a>
+                    <a target="__blank" href="https://caiogsan.github.io/songfy"><img alt="songfy" className="hover:scale-110 duration-300 h-full rounded-2xl" src={songfy}></img></a>
                 </div>
                 <div className="h-[12rem]">
                     <h1 className="pb-4">{language === "ingles" ? "Old Portfolio" : "Antigo Portfolio"}</h1>
