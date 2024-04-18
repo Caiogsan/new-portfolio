@@ -10,23 +10,7 @@ import songfy from "../../assets/songfy.JPG"
 import escorpiao from "../../assets/scorpiao.PNG"
 import nodeLogo from "../../assets/nodelogo.jpg"
 
-export const javascript = [
-    {
-        id:1,
-        img: escorpiao,
-        link: "https://caiogsan.github.io/Gym-Project/"
-    },
-    {
-        id:2,
-        img: cordel,
-        link: "https://caiogsan.github.io/projeto4/"
-    },
-    {
-        id:3,
-        img: android,
-        link: "https://caiogsan.github.io/projeto1/"
-    },
-]
+
 
 export const react = [
     {
@@ -54,16 +38,6 @@ export const react = [
         id:4,
         img: popflix,
         link: "https://caiogsan.github.io/pop-flix/"
-    },
-    {
-        id:5,
-        img: portfolioOld,
-        link: "https://caiogsan.github.io/My-PortFolio/"
-    },
-    {
-        id:6,
-        img: match,
-        link: "https://caiogsan.github.io/match-game/"
     },
 ]
 

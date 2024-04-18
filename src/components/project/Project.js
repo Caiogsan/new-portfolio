@@ -1,6 +1,5 @@
 import { Presentation, ProjectImg } from "./projectExport";
 import {
-  javascript,
   react,
   node,
   typescript
@@ -31,10 +30,7 @@ function Project() {
           }
         ></Presentation>
         <div className="pt-14 pb-20 m-auto">
-          <ProjectImg
-            titulo={"Javascript"}
-            tecnologia={javascript}
-          ></ProjectImg>
+          
           <ProjectImg
             titulo={"ReactJs"}
             tecnologia={react}
